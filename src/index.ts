@@ -15,7 +15,6 @@ export default function(source: string) {
 
   // 获取原始文件地址
   const codeFilePath = webpackEnv.resourcePath
-
   if (typeof isPage !== 'function' || !isPage(codeFilePath)) return source
 
   // 生成 AST
